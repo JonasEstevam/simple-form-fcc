@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1 id="title">Pesquisa freeCodeCamp</h1>
+      <p id="description">
+        Obrigado por tirar um tempinho para nos ajudar a melhor a plataforma.
+      </p>
+    </div>
+    <form id="survey-form">
+      <div class="form-div">
+        <label id="name-label" for="name">Nome</label>
+        <input
+          class="text-input"
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Digite seu nome"
+        />
+
+        <label id="email-label" for="email">E-mail</label>
+        <input
+          class="text-input"
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Digite seu e-mail"
+        />
+
+        <label id="number-label" for="number">Digite sua idade</label>
+        <input
+          class="text-input"
+          type="number"
+          id="number"
+          name="age"
+          placeholder="Digite sua idade"
+          min="0"
+          max="200"
+        />
+      </div>
+
+      <div class="form-div">
+        <p>Qual opção descrever melhor sua função atual?</p>
+        <select id="dropdown" class="dropdown-input">
+          <option value="student">Estudante</option>
+          <option value="fulltime-job">Trabalho integralmente</option>
+          <option value="fulltime-student">Estudo integralmente</option>
+          <option value="rathernottosay">Prefiro não dizer</option>
+          <option value="other">Outro</option>
+        </select>
+      </div>
+
+      <div class="form-div">
+        <p>Você recomendaria o freeCodeCamp para um amigo?</p>
+
+        <fieldset class="fieldset-input" id="would-recomend">
+          <label
+            ><input
+              class="radio-input"
+              type="radio"
+              value="sure"
+              name="would-recomend"
+            />Com certeza</label
+          >
+          <label
+            ><input
+              class="radio-input"
+              type="radio"
+              value="maybe"
+              name="would-recomend"
+            />Talvez</label
+          >
+          <label
+            ><input
+              class="radio-input"
+              type="radio"
+              value="no"
+              name="would-recomend"
+            />Não</label
+          >
+        </fieldset>
+      </div>
+
+      <div class="form-div">
+        <p>Do que você mais gosta no freeCodeCamp?</p>
+
+        <select id="dropdown-liked" class="dropdown-input">
+          <option value="challenges">Desafios</option>
+          <option value="projects">Projetos</option>
+          <option value="community">Comunidade</option>
+          <option value="open-source">Ser open-source</option>
+          <option value="other">Outro</option>
+        </select>
+      </div>
+
+      <div class="form-div">
+        <p>O que você gostaria que melhorasse?</p>
+
+        <label>
+          <input class="checkbox-input" value="backend-projects" type="checkbox" />Projetos
+          front-end
+        </label>
+        <label>
+          <input class="checkbox-input" value="frontend-projects" type="checkbox" />Projetos
+          back-end
+        </label>
+        <label>
+          <input
+            class="checkbox-input"
+            value="data-visualization"
+            type="checkbox"
+          />Visualização das Informações
+        </label>
+        <label>
+          <input
+            class="checkbox-input"
+            value="challenges"
+            type="checkbox"
+          />Desafios</label
+        >
+        <label>
+          <input
+            class="checkbox-input"
+            value="community"
+            type="checkbox"
+          />Comunidade Open-Source</label
+        >
+        <label>
+          <input
+            class="checkbox-input"
+            value="gitter-rooms"
+            type="checkbox"
+          />Salas de ajuda no Gitter</label
+        >
+        <label>
+          <input
+            class="checkbox-input"
+            value="videos"
+            type="checkbox"
+          />Vídeos</label
+        >
+        <label>
+          <input
+            class="checkbox-input"
+            value="meetups"
+            type="checkbox"
+          />Encontros na sua cidade</label
+        >
+        <label>
+          <input
+            class="checkbox-input"
+            value="wiki"
+            type="checkbox"
+          />Enciclopédia</label
+        >
+        <label>
+          <input
+            class="checkbox-input"
+            value="forum"
+            type="checkbox"
+          />Fórum</label
+        >
+        <label>
+          <input
+            class="checkbox-input"
+            value="additional-courses"
+            type="checkbox"
+          />Cursos Adicionais</label
+        >
+      </div>
+
+      <div class="form-div">
+        <p>Algum comentário e/ou sugestão?</p>
+
+        <textarea
+          id="textarea-input"
+          placeholder="Digite sua sugestão aqui..."
+        ></textarea>
+      </div>
+
+      <div class="form-div">
+        <input id="submit" type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
